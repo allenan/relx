@@ -331,7 +331,7 @@ export PROGNAME="erl"
 export LD_LIBRARY_PATH="$ERTS_DIR/lib:$LD_LIBRARY_PATH"
 ERTS_LIB_DIR="$(dirname "$ERTS_DIR")/lib"
 
-VMARGS_PATH=$(add_path vm.args $VMARGS_PATH)
+VMARGS_PATH=$(add_path vm.args "$VMARGS_PATH")
 
 # Check vm.args and other files referenced via -args_file parameters for:
 #    - nonexisting -args_files
